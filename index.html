@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DSA Quest — A Field Manual for Algorithmic Patterns</title>
+<meta name="description" content="A structured, drafted-by-hand roadmap from beginner to advanced DSA. 19 pattern sheets, 147 curated problems, video walkthroughs as you go." />
+<script>try{var t=localStorage.getItem("dsaquest_theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231b160e%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 text-anchor=%22middle%22 fill=%22%23dd9752%22 font-family=%22monospace%22>DQ</text></svg>" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="nav-mount"></div>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="sheet-tag mono">Field Manual · Rev. 2026</span>
+      <h1>Stop grinding problems.<br>Learn to read the <em>pattern</em> underneath them.</h1>
+      <p class="lede">A structured route from first principles to advanced interview readiness —
+        three volumes, nineteen pattern sheets, 147 curated problems, and space for your own
+        video walkthroughs as you record them.</p>
+      <div class="hero-cta">
+        <a href="topic.html?t=big-o" class="btn btn-primary">Open Sheet 01 →</a>
+        <a href="#roadmap" class="btn btn-ghost">View full index</a>
+      </div>
+    </div>
+    <div class="readout">
+      <div class="readout-canvas-wrap"><canvas id="hero-canvas"></canvas></div>
+      <div class="readout-data" id="stat-strip"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="container">
+    <div class="section-head">
+      <span class="index-no mono">§ Index</span>
+      <h2>Three volumes. Nineteen sheets. Zero wasted problems.</h2>
+      <p>Every sheet exists because it unlocks the next one. Work top to bottom on your first pass —
+        you're free to jump around once the earlier volumes are solid.</p>
+    </div>
+    <div id="skill-tree"></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="marginalia">
+      <div style="flex:1; min-width:240px;">
+        <span class="label mono">Marginal note</span>
+        <p>There are 3,000+ problems catalogued on LeetCode and roughly twenty real patterns behind
+          them. Memorizing solutions caps out fast; recognizing the pattern underneath compounds —
+          every new problem gets easier once you've filed the shape correctly.
+          <a href="about.html" class="inline-link">Read the full study guide →</a></p>
+      </div>
+      <a href="problems.html" class="btn btn-ghost">Browse the full index →</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-mount"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/blueprint-bg.js"></script>
+<script>
+  renderNav("index.html");
+  renderFooter();
+  renderStatStrip("stat-strip");
+  renderSkillTree("skill-tree");
+</script>
+</body>
+</html>
